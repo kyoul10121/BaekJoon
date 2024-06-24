@@ -18,7 +18,7 @@ public class BaekJoon_2798{ //블랙잭
     //탐색
     static int search(int[] arr, int N, int M){
         int result = 0;
-        for (int i = 0; i <= N-2; i++) {
+        for (int i = 0; i < N-2; i++) {
             for (int j = i+1; j < N-1; j++) {
                 for (int k = j+1; k < N; k++) {
                     int sumMax = arr[i] + arr[j] + arr[k];
